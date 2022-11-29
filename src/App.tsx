@@ -3,6 +3,9 @@ import './App.css'
 
 import FirstComponent from './assets/components/first-component'
 import SecondComponent from './assets/components/second-component'
+import ComponentWithState from './assets/components/state-managed-component'
+import ConsoleMessage from './assets/components/buttons/button-event'
+import ConsoleAFMessage from './assets/components/buttons/button-arrow-func'
 
 import UserData from './assets/info/data'
 
@@ -16,6 +19,9 @@ function App() {
         <hr/>
         <FirstComponent info={ UserData } />
         <SecondComponent info={ UserData } />
+        <ComponentWithState initialText="Type something" />
+        <ConsoleMessage />
+        <ConsoleAFMessage />
       </div>
     </React.Fragment>
 
